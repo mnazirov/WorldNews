@@ -20,7 +20,7 @@ class NewsImageView: UIImageView {
             return
         }
         
-        NetworkManager.shared.fetchImage2(url: imageURL) { (data, response) in
+        NetworkManager.shared.fetchImage(url: imageURL) { (data, response) in
             DispatchQueue.main.async {
                 self.image = UIImage(data: data)
             }

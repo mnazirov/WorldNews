@@ -30,19 +30,7 @@ struct NetworkManager {
         }.resume()
     }
     
-    func fetchImage(url: String, complition: @escaping (Data) -> Void) {
-        guard let url = URL(string: url) else {
-            let defaultImage = #imageLiteral(resourceName: "picture")
-            guard let imageData = defaultImage.pngData() else { return }
-            complition(imageData)
-            return
-        }
-        
-        guard let imageData = try? Data(contentsOf: url) else { return }
-        complition(imageData)
-    }
-    
-    func fetchImage2(url: URL, complition: @escaping (Data, URLResponse) -> Void) {
+    func fetchImage(url: URL, complition: @escaping (Data, URLResponse) -> Void) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data, let response = response else {
                 print(error.debugDescription)
