@@ -96,9 +96,6 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" id="MPo-jy-aXw"/>
                     <navigationItem key="navigationItem" title="World News" id="V8a-f3-PJ5">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="rhR-Q2-AL9">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="vtG-DN-hZF">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -172,7 +169,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="newspaper" catalog="system" width="128" height="108"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
