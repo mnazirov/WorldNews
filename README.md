@@ -1,5 +1,5 @@
 ## Description
-News from around the world, updated every second. 
+News from around the world. 
 - API connected [currentsapi.services/en](http://currentsapi.services/en)
 - The MVC architecture was used
 - Configured image caching
